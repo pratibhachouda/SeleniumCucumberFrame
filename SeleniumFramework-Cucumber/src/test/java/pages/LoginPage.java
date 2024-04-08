@@ -11,7 +11,7 @@ public class LoginPage {
 		this.driver = driver;
 	}
 
-	// locate for Webelement in log;in page
+	// locate for Webelement in login page
 	By usernametxt = By.id("username");
 	By passwordtxt = By.id("password");
 	By loginBtn = By.id("Login");
