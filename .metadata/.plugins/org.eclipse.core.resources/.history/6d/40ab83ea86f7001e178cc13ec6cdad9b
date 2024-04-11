@@ -1,0 +1,41 @@
+package utility;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import com.github.dockerjava.api.model.Driver;
+
+public class ActionClass {
+	public static WebDriver driver;
+
+	public ActionClass(WebDriver driver) {
+		
+		
+	}
+	
+	public static void sendkeys(WebElement element,String InptValue) {
+		element.sendKeys(InptValue);
+	}
+	
+	public static void click(WebElement element) {
+		element.click();
+		
+	}
+	
+	public static void getcurrentUrl() {
+		String currentURL= driver.getCurrentUrl();
+		System.out.println(currentURL);
+		
+	}
+	
+	public static void 
+}
+
+
+
+
+
+
+
+
+

@@ -10,9 +10,9 @@ public class LoginPageWithPageFactory {
 	WebDriver driver;
 
 	public LoginPageWithPageFactory(WebDriver driver) {
-
-		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		this.driver = driver;
+		
 	}
 
 	@FindBy(id = "username")

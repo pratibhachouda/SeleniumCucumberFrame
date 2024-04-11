@@ -1,0 +1,81 @@
+package dataReader;
+
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
+
+import enums.ExecutionMode;
+import enums.Browsertype;
+
+public class ConfigFileReader {
+	private Properties properties;
+
+	private final String propertyFileName = "cofig/Configuration.properties";
+
+	public ConfigFileReader() {
+		InputStream resourceStream = ClassLoader.getSystemClassLoader().getResourceAsStream(propertyFileName);
+		properties = new Properties();
+		try {
+			properties.load(resourceStream);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			throw new RuntimeException("Issue Loading the Configuration.properties from:" + propertyFileName);
+
+		}
+	}
+
+	public Browsertype getBrowser() {
+		String browserName=properties.getProperty("browser");
+		if(browserName.equalsIgnoreCase("Chrome"))
+			return Browsertype.CHROME;
+		else if( browserName.equalsIgnoreCase("Firefox"))
+		return Browsertype.FIREFOX;
+		else if (browserName.equalsIgnoreCase("Edge"))
+		return Browsertype.EDGE;
+		else throw new RuntimeException("Browser Name Key Value in cConfiguration.properties is not Matched:"+browserName);
+		}
+	
+	public ExecutionMode getexecutionMode() {
+		String executionMode =properties.getProperty("executionMode");
+		if (executionMode.equalsIgnoreCase("local"))
+			return ExecutionMode.LOCAL;
+		else if(executionMode.equalsIgnoreCase("headless"))
+			return ExecutionMode.HEADLESS;
+		else throw new RuntimeException("Browser Name Key Value in Configuration.properties is not Matched:"+executionMode);
+		
+	}  
+		
+	public String getApplicationURL() {
+		String url= properties.getProperty("applicationURL");
+		if (url!=null)
+			return url;
+		else throw new RuntimeException("Browser Name Key Value in cConfiguration.properties is not Matched:"+url);
+		}
+	
+	public String UserName() {
+		String username= properties.getProperty("username");
+		if (username!=null)
+			return username;
+		else throw new RuntimeException("Browser Name Key Value in cConfiguration.properties is not Matched:"+username);
+	}
+	
+	public String Password() {
+		String password= properties.getProperty("password");
+		if (password!=null)
+			return password;
+		else throw new RuntimeException("Browser Name Key Value in cConfiguration.properties is not Matched:"+password);
+	}
+}
+
+
+
+
+
+
+
+
+
+

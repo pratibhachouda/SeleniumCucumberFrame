@@ -1,0 +1,44 @@
+package manager;
+
+import org.openqa.selenium.WebDriver;
+
+import enums.Browsertype;
+import enums.ExecutionMode;
+import manager.*;
+
+public class WebdriverManager {
+
+	WebDriver driver;
+	private Browsertype browserType;
+	private ExecutionMode executionMode;
+
+	public WebdriverManager() {
+		browserType = FileReaderManager.getInstance().getConfigFileReader().getBrowser();
+		executionMode = FileReaderManager.getInstance().getConfigFileReader().getexecutionMode();
+
+	}
+
+	private WebDriver creatDriver() {
+		switch (executionMode) {
+		case LOCAL:
+			driver=createLocalDriver();
+			break;
+		case HEADLESS:
+			driver=creatHeadless();
+			break;
+		}
+		return driver;
+
+	}
+
+	private WebDriver creatHeadless() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private WebDriver createLocalDriver() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

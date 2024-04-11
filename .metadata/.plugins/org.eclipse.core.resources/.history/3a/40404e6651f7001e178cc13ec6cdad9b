@@ -1,0 +1,55 @@
+package dataReader;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
+import org.junit.jupiter.api.parallel.ExecutionMode;
+
+import enums.BrowserType;
+
+public class ConfigFileReader {
+	private Properties properties;
+
+	private final String propertyFileName = "cofig/Configuration.properties";
+
+	public ConfigFileReader() {
+		InputStream resourceStream = ClassLoader.getSystemClassLoader().getResourceAsStream(propertyFileName);
+		properties = new Properties();
+		try {
+			properties.load(resourceStream);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			throw new RuntimeException("Issue Loading the Configuration.properties from:" + propertyFileName);
+
+		}
+	}
+
+	public BrowserType getBrowser() {
+		String browserName=properties.getProperty("browser");
+		if(browserName.equalsIgnoreCase("Chrome"))
+			return BrowserType.CHROME;
+		
+		else if( browserName.equalsIgnoreCase("Firefox"))
+		return BrowserType.FIREFOX;
+		else if (browserName.equalsIgnoreCase("Edge"))
+		return BrowserType.EDGE;
+		else throw new RuntimeException("Browser Name Key Value in cConfiguration.properties is not Matched:"+browserName);
+		
+	   }
+	public ExecutionMode getexecutionMode() {
+		String executionMode=properties.getProperty("executionMode");
+		if (executionMode.equalsIgnoreCase("local"))
+			return ExecutionMode.LOCAL;
+		else if(executionMode.equalsIgnoreCase("headless"))
+			return ExecutionMode.HEADLESS;
+		else throw new RuntimeException("Browser Name Key Value in cConfiguration.properties is not Matched:"+executionMode);
+		
+		
+		
+		
+			
+		
+	}
+}

@@ -1,0 +1,15 @@
+package manager;
+
+import org.openqa.selenium.WebDriver;
+
+public class WebdriverManager {
+
+	WebDriver driver;
+	
+
+	private WebDriver creatDriver() {
+		return driver;
+
+	}
+
+}
