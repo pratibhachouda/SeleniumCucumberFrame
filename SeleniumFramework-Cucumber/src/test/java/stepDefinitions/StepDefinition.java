@@ -15,7 +15,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.LoginPageWithPageFactory;
 
-public class StepDefinition {
+/*public class StepDefinition {
 	ChromeOptions options = new ChromeOptions();
 	WebDriver driver = new ChromeDriver(options.addArguments("--disable-notifications"));
 	JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -71,9 +71,9 @@ public class StepDefinition {
 		//driver.findElement(By.id("password")).sendKeys("pratibha@min2");
 		//driver.findElement(By.id("Login")).click();
 		//System.out.println(driver.getTitle());
-		login.enterUsername("pratibhachouda4085@gmail.com");
-		login.enterpassword("pratibha@min2");
-		login.clickloginButton();
+		login.enterUsername();
+		login.enterpassword();
+		login.clickloginButton(); 
 	
 	}
 
@@ -149,4 +149,4 @@ public class StepDefinition {
 
 	}
 
-}
+}*/

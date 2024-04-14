@@ -18,6 +18,6 @@ public class FileReaderManager {
   public ConfigFileReader getConfigFileReader() {
 	  return(configFileReader==null)? new ConfigFileReader():configFileReader;
 	  
-  
+	  
   }
 }

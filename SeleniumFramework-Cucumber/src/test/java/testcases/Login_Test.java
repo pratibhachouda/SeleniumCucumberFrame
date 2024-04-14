@@ -7,11 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pages.LoginPage;
 import pages.LoginPageWithPageFactory;
 
-public class Login_Test {
+//public class Login_Test {
 
-	public static void main(String[] args) {
+	//public static void main(String[] args) {
 		
-		WebDriver driver = new ChromeDriver();
+		/*WebDriver driver = new ChromeDriver();
 		LoginPageWithPageFactory login = new LoginPageWithPageFactory(driver);
 		login.launchApplication("https://login.salesforce.com/");
 		login.enterUsername("pratibhachouda4085@gmail.com");
@@ -21,4 +21,4 @@ public class Login_Test {
       
 	}
 
-}
+}*/

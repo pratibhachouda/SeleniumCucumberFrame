@@ -16,9 +16,6 @@
     <fullyQualifiedTypeName name="io.cucumber.java.en.When"/>
     <fullyQualifiedTypeName name="io.cucumber.java.en.Given"/>
     <fullyQualifiedTypeName name="io.cucumber.java.en.Then"/>
-    <fullyQualifiedTypeName name="pages.LoginPageWithPageFactory"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
-    <fullyQualifiedTypeName name="manager.FileReaderManager"/>
     <fullyQualifiedTypeName name="dataReader.ConfigFileReader"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="java.lang.ClassLoader"/>
@@ -27,4 +24,14 @@
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.parallel.ExecutionMode"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
+    <fullyQualifiedTypeName name="manager.FileReaderManager"/>
+    <fullyQualifiedTypeName name="utility.ActionClass"/>
+    <fullyQualifiedTypeName name="pages.LoginPageWithPageFactory"/>
+    <fullyQualifiedTypeName name="manager.WebdriverManager"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 </qualifiedTypeNameHistroy>
