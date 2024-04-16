@@ -8,7 +8,6 @@
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="io.cucumber.java.Before"/>
     <fullyQualifiedTypeName name="io.cucumber.java.After"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.support.CacheLookup"/>
@@ -34,4 +33,5 @@
     <fullyQualifiedTypeName name="pages.LoginPageWithPageFactory"/>
     <fullyQualifiedTypeName name="manager.WebdriverManager"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 </qualifiedTypeNameHistroy>

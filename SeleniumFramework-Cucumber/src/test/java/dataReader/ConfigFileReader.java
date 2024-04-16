@@ -11,7 +11,7 @@ import enums.Browsertype;
 public class ConfigFileReader {
 	private Properties properties;
 
-	private final String propertyFileName = "cofig/Configuration.properties";
+	private final String propertyFileName = "config/Configuration.properties";
 
 	public ConfigFileReader() {
 		InputStream resourceStream = ClassLoader.getSystemClassLoader().getResourceAsStream(propertyFileName);
@@ -28,13 +28,14 @@ public class ConfigFileReader {
 
 	public Browsertype getBrowser() {
 		String browserName=properties.getProperty("browser");
+		System.out.println(browserName);
 		if(browserName.equalsIgnoreCase("Chrome"))
 			return Browsertype.CHROME;
 		else if( browserName.equalsIgnoreCase("Firefox"))
 		return Browsertype.FIREFOX;
 		else if (browserName.equalsIgnoreCase("Edge"))
 		return Browsertype.EDGE;
-		else throw new RuntimeException("Browser Name Key Value in cConfiguration.properties is not Matched:"+browserName);
+		else throw new RuntimeException("Browser Name Key Value in Configuration.properties is not Matched:"+browserName);
 		}
 	
 	public ExecutionMode getexecutionMode() {
@@ -51,21 +52,21 @@ public class ConfigFileReader {
 		String url= properties.getProperty("applicationURL");
 		if (url!=null)
 			return url;
-		else throw new RuntimeException("Browser Name Key Value in cConfiguration.properties is not Matched:"+url);
+		else throw new RuntimeException("Browser Name Key Value in Configuration.properties is not Matched:"+url);
 		}
 	
 	public String UserName() {
 		String username= properties.getProperty("username");
 		if (username!=null)
 			return username;
-		else throw new RuntimeException("Browser Name Key Value in cConfiguration.properties is not Matched:"+username);
+		else throw new RuntimeException("Browser Name Key Value in Configuration.properties is not Matched:"+username);
 	}
 	
 	public String Password() {
 		String password= properties.getProperty("password");
 		if (password!=null)
 			return password;
-		else throw new RuntimeException("Browser Name Key Value in cConfiguration.properties is not Matched:"+password);
+		else throw new RuntimeException("Browser Name Key Value in Configuration.properties is not Matched:"+password);
 	}
 }
 

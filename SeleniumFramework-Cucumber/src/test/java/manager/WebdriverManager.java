@@ -48,6 +48,7 @@ public class WebdriverManager {
        options.addArguments("--disable-notifications");
        options.addArguments("--headless=new");
        driver=new ChromeDriver(options);
+       driver.manage().window().maximize();
        break;
        
 		case FIREFOX:
@@ -55,6 +56,8 @@ public class WebdriverManager {
 			fp.addArguments("--disable-notifications");
 			fp.addArguments("--headless=new");
 			driver = new FirefoxDriver(fp);
+		    driver.manage().window().maximize();
+
 			break;
 
 		}

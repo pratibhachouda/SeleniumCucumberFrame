@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.en.Given;
@@ -20,15 +21,16 @@ public class StepDefinitionForFrameWork {
 		
 		webdrivermanager = new WebdriverManager();
 		this.driver= webdrivermanager.getDriver();
-		Login = new LoginPageWithPageFactory(this.driver);
+		LoginPageWithPageFactory Login = new LoginPageWithPageFactory(this.driver);
 		Login.launchApplication();
 		Login.enterUsername();
 		Login.enterpassword();      
 		Login.clickloginButton();     
-	}
+	} 
 	
 	@When("User is on Home Page,Click on Application Launcher")
 	public void user_is_on_home_page_click_on_application_launcher() {
+	
 	    
 	}
 

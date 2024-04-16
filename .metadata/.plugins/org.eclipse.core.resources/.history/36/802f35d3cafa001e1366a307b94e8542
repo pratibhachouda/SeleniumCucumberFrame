@@ -1,0 +1,6 @@
+browser=chrome,
+executionMode=local
+implicitWait=20
+applicationURL=https://login.salesforce.com/
+username=pratibhachouda4085@gmail.com
+password=pratibha@min2
