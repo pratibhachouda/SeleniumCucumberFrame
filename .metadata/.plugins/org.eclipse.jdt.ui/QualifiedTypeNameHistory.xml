@@ -34,12 +34,12 @@
     <fullyQualifiedTypeName name="manager.WebdriverManager"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+    <fullyQualifiedTypeName name="groovyjarjarasm.asm.commons.Method"/>
     <fullyQualifiedTypeName name="io.restassured.RestAssured"/>
     <fullyQualifiedTypeName name="io.restassured.specification.RequestSpecification"/>
     <fullyQualifiedTypeName name="io.restassured.response.Response"/>
+    <fullyQualifiedTypeName name="io.restassured.http.Method"/>
     <fullyQualifiedTypeName name="io.restassured.response.ResponseBody"/>
     <fullyQualifiedTypeName name="io.restassured.path.json.JsonPath"/>
-    <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
-    <fullyQualifiedTypeName name="groovyjarjarasm.asm.commons.Method"/>
-    <fullyQualifiedTypeName name="io.restassured.http.Method"/>
 </qualifiedTypeNameHistroy>

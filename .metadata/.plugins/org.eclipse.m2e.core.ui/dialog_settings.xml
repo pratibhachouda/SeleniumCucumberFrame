@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Advik\eclipse-workspace\APITesting"/>
 			<item value="C:\Users\Advik\eclipse-workspace\SeleniumConceptTraining"/>
 		</list>
 		<list key="projectNameTemplate">
