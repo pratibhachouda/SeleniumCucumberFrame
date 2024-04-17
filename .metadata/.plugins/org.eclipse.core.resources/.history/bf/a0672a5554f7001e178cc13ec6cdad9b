@@ -1,6 +1,0 @@
-package enums;
-
-public enum Browsertype2 {
-	CHROME,FIREFOX,EDGE
-
-}

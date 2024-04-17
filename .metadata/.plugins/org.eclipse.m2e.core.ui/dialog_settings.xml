@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Advik\eclipse-workspace\SeleniumConceptTraining"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -44,12 +45,16 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="APITesting"/>
+			<item value="APITesting1"/>
 			<item value="SeleniumFramework-Cucumber"/>
 		</list>
 		<list key="name">
 			<item value="SeleniumFramework-Cucumber"/>
 		</list>
 		<list key="artifactId">
+			<item value="APITesting"/>
+			<item value="APITesting1"/>
 			<item value="SeleniumFramework-Cucumber"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -65,6 +70,14 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
@@ -80,5 +93,11 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="836"/>
+		<item key="x" value="720"/>
+		<item key="y" value="0"/>
 	</section>
 </section>
